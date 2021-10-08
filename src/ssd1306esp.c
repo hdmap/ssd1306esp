@@ -169,7 +169,7 @@ void SSD1306ESP_UploadScreen(SSD1306ESP_Buffer data)
 void SSD1306ESP_SetContrast(uint8_t contrast)
 {
 	SSD1306ESP_WriteByte(0x81);
-	SSD1306ESP_WriteByte(0xFF);
+	SSD1306ESP_WriteByte(contrast);
 }
 
 void SSD1306ESP_SetInvert(uint8_t invert)
